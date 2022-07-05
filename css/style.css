@@ -266,6 +266,53 @@ header {
 /* Our Recent Activity */
 .activity-gallery {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+}
+
+.activity-card {
+  position: relative;
+  height: 300px;
+  cursor: pointer;
+}
+
+.activity-card img {
+  max-width: 100%;
+  width: 400px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.activity-card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: 0.7s ease;
+}
+
+.activity-card:hover .overlay {
+  transform: scale(1);
+}
+
+.overlay .text {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
 }
 
 /* Get My Updates */
