@@ -1,7 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  width: 80%;
+  margin-inline: auto;
+}
+
+/* Header */
+header {
+  height: 100vh;
+  background: url(../images/donation5.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  position: relative;
+}
+
+.header-content {
+  height: 100%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.header-content h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 75px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.header-content p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 3rem 2.5rem;
+  /* width: 75%;
+  margin-inline: auto; */
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  background: #ff5959;
+  border-radius: 8px;
+  padding: 14px 1rem;
 }
