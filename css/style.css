@@ -115,6 +115,7 @@ header {
   padding: 2rem;
   border-radius: 8px;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .amount.active {
@@ -134,16 +135,19 @@ header {
   color: #ff5959;
 }
 
-form {
+.amount:hover {
+  transform: scale(1.05);
+}
+
+.donate-today-container form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   gap: 1.5rem;
   padding: 4.5rem 3rem 0;
 }
 
-form input:first-child {
+.donate-today-container form input[type='text'] {
   border: none;
   outline: none;
   border-bottom: 1.5px solid #dadada;
@@ -157,7 +161,7 @@ form input:first-child {
   padding: 10px 0;
 }
 
-form input:last-child {
+.donate-today-container form input[type='button'] {
   align-self: center;
   cursor: pointer;
 }
@@ -167,21 +171,24 @@ form input:last-child {
   padding: 6rem 0;
 }
 
-.donate-text {
+.donate-text,
+.update-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.donate-text h2 {
+.donate-text h2,
+.update-text h2 {
   font-weight: 700;
   font-size: 45px;
   line-height: 54px;
   color: #121212;
 }
 
-.donate-text p {
+.donate-text p,
+.update-text p {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -245,4 +252,45 @@ form input:last-child {
 
 .category:hover {
   transform: scale(1.05);
+}
+
+/* Get My Updates */
+.update-section-container .form-container {
+  width: 70%;
+  margin-inline: auto;
+  background: #fff4d6;
+  padding: 4rem 4rem;
+}
+
+.update-section-container .form-container form {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container form input[type='email'] {
+  border: 0;
+  outline: 0;
+  background: #d9d9d9;
+  border-radius: 5px 0px 0px 5px;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #aa9f9f;
+}
+
+.form-container form button {
+  border: 0;
+  outline: 0;
+  background: #ff5959;
+  border-radius: 0px 5px 5px 0px;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
 }
