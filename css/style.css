@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lobster&family=Manrope&family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -9,6 +9,8 @@
 }
 
 body {
+  font-family: 'Lobster', cursive;
+  font-family: 'Manrope', sans-serif;
   font-family: 'Poppins', sans-serif;
   font-family: 'Inter', sans-serif;
 }
@@ -255,11 +257,16 @@ header {
 }
 
 /* Get My Updates */
+.update-section-container {
+  padding: 4rem 0 6rem;
+}
+
 .update-section-container .form-container {
   width: 70%;
   margin-inline: auto;
   background: #fff4d6;
   padding: 4rem 4rem;
+  border-radius: 8px;
 }
 
 .update-section-container .form-container form {
@@ -293,4 +300,33 @@ header {
   text-align: center;
   color: #ffffff;
   cursor: pointer;
+}
+
+/* Footer */
+footer {
+  padding: 2.5rem;
+  background: #0b0d17;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer h3 {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.5px;
+  color: #ff5959;
+}
+
+footer p {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #d9dbe1;
 }
