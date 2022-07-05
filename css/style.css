@@ -216,6 +216,7 @@ header {
 }
 
 .category {
+  flex: 1;
   padding: 3rem 1.5rem;
   border-radius: 8px;
   cursor: pointer;
@@ -348,7 +349,7 @@ header {
 
 .contribute-img img {
   max-width: 100%;
-  width: 800px;
+  width: 850px;
   height: auto;
   object-fit: cover;
   border-radius: 12px;
