@@ -124,7 +124,60 @@ header {
   line-height: 28px;
   text-align: center;
   color: #707070;
-  padding: 1rem 0 2rem;
+  padding: 1.3rem 0 3rem;
   width: 60%;
   margin-inline: auto;
+}
+
+.donate-plan-category {
+  display: flex;
+  gap: 1rem;
+}
+
+.category {
+  padding: 3rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.category img {
+  max-width: 100%;
+  width: 55px;
+  height: 50px;
+}
+
+.category h3 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #121212;
+  padding: 1.2rem 0;
+}
+
+.category p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #707070;
+}
+
+.category-1 {
+  background: rgba(79, 157, 166, 0.1);
+}
+
+.category-2 {
+  background: rgba(255, 89, 89, 0.1);
+}
+
+.category-3 {
+  background: #fff4d6;
+}
+
+.category:hover {
+  transform: scale(1.05);
 }
